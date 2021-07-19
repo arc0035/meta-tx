@@ -11,15 +11,15 @@ const txPrototype = {
 }
 /**
  * 借助EIP-712协议为交易进行签名，得到一笔已签名交易
- * @param {} tx 
  */
-function buildSignedTx(to, data, nonce, chainId, hexPrivateKey){
-    
+function buildSignedTx(to, data, chainId, hexPrivateKey){
+    var tx = {}
+    tx[to] = to
+    tx[data] = data
 }
 
 /**
  * 借助EIP-712协议为交易进行签名，得到一笔已签名交易
- * @param {} tx 
  */
  function buildSignedTx(to, funcSig, args, nonce, chainId, hexPrivateKey){
     

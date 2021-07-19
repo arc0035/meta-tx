@@ -6,5 +6,9 @@ contract TrustedForwarder{
     struct Transaction{
         
     }
+
+    function onMetaTx(Transaction memory metaTx) external {
+
+    }
     
 }
